@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Modern Blog</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+font-family: 'Segoe UI',sans-serif;
+color:white;
+}
+
+/* Navbar */
+.navbar{
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+}
+
+/* Blog title */
+.title{
+font-weight:700;
+margin-top:40px;
+margin-bottom:40px;
+}
+
+/* Card style */
+.card{
+background:rgba(255,255,255,0.08);
+border:none;
+border-radius:15px;
+overflow:hidden;
+color:white;
+transition:all 0.35s ease;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Card hover */
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Card images */
+.card img{
+height:220px;
+object-fit:cover;
+}
+
+/* Button styling */
+.btn-read{
+background:linear-gradient(135deg,#6366f1,#a855f7);
+border:none;
+color:white;
+padding:10px 18px;
+border-radius:8px;
+transition:all 0.3s ease;
+}
+
+/* Button hover */
+.btn-read:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(99,102,241,0.6);
+}
+
+/* Footer */
+footer{
+background:#020617;
+padding:30px;
+margin-top:60px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand fw-bold">MyBlog</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">Articles</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">Contact</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- BLOG SECTION -->
+
+<div class="container">
+
+<h1 class="text-center title">Latest Blog Posts</h1>
+
+<div class="row g-4">
+
+<!-- CARD 1 -->
+
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<div class="card-body">
+
+<h5 class="card-title">Web Development Trends</h5>
+
+<p class="card-text">
+Explore modern frameworks, AI integration, and the future of web development.
+</p>
+
+<button class="btn btn-read" onclick="openBlog(1)">Read More</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 2 -->
+
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+
+<div class="card-body">
+
+<h5 class="card-title">Learning JavaScript</h5>
+
+<p class="card-text">
+Understand closures, async programming and the power of JS in modern apps.
+</p>
+
+<button class="btn btn-read" onclick="openBlog(2)">Read More</button>
+
+</div>
+
+</div>
+</div>
+
+<!-- CARD 3 -->
+
+<div class="col-md-4">
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542831371-d531d36971e6">
+
+<div class="card-body">
+
+<h5 class="card-title">CSS Layout Techniques</h5>
+
+<p class="card-text">
+Master Flexbox and CSS Grid for powerful responsive layouts.
+</p>
+
+<button class="btn btn-read" onclick="openBlog(3)">Read More</button>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 MyBlog</p>
+
+<div style="font-size:22px;">
+🌐 📘 📷
+</div>
+
+</footer>
+
+<!-- SCRIPT -->
+
+<script>
+
+function openBlog(id){
+
+if(id===1){
+alert("Blog: Web Development Trends\n\nDiscusses React, AI tools and new frameworks.");
+}
+
+if(id===2){
+alert("Blog: Learning JavaScript\n\nCovers closures, async/await and DOM manipulation.");
+}
+
+if(id===3){
+alert("Blog: CSS Layout Techniques\n\nExplains Flexbox, Grid and responsive design.");
+}
+
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
